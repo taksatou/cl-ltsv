@@ -1,4 +1,4 @@
-# Cl-Ltsv
+# cl-ltsv
 
 cl-ltsv is LTSV parser for common lisp.
 
