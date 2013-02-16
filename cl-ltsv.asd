@@ -19,7 +19,8 @@
   :depends-on ()
   :components ((:module "src"
                 :components
-                ((:file "cl-ltsv"))))
+                ((:file "package")
+                 (:file "cl-ltsv"))))
   :description "LTSV parser for common lisp."
   :long-description
   #.(with-open-file (stream (merge-pathnames
