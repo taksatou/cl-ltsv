@@ -20,7 +20,7 @@
   :components ((:module "src"
                 :components
                 ((:file "cl-ltsv"))))
-  :description ""
+  :description "LTSV parser for common lisp."
   :long-description
   #.(with-open-file (stream (merge-pathnames
                              #p"README.md"
