@@ -5,6 +5,7 @@
 
 (in-package :cl-user)
 (defpackage cl-ltsv
+  (:nicknames #:ltsv)
   (:use :cl)
   (:export
    #:parse-line
