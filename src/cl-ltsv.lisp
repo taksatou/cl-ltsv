@@ -5,7 +5,14 @@
 
 (in-package :cl-user)
 (defpackage cl-ltsv
-  (:use :cl))
+  (:nicknames #:ltsv)
+  (:use :cl)
+  (:export
+   #:parse-line
+   #:with-ltsv-from-stream
+   #:alist-ltsv
+   ))
+
 (in-package :cl-ltsv)
 
 (defun position-if-c (c s &key (start 0))
