@@ -28,10 +28,10 @@
 (defun parse-line (s)
   (loop
      for kv in (split-sequence #\tab s)
-     collect (let* ((lis (split-sequence #\: kv))
-                    (k (car lis))
-                    (v (cadr lis)))
-               (cons k v))))
+     collect (let ((pos (position-if-c #\: kv)))
+	       (if pos
+		   (cons (subseq kv 0 pos)
+			 (subseq kv (1+ pos)))))))
 
 (defmacro with-ltsv-from-stream ((entry stream) &body body)
   (let ((line (gensym)))
