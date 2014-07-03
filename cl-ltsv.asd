@@ -13,7 +13,7 @@
 (in-package :cl-ltsv-asd)
 
 (defsystem cl-ltsv
-  :version "0.1"
+  :version "0.2.0"
   :author "Takayuki Sato"
   :license "LLGPL"
   :depends-on ()
