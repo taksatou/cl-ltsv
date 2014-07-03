@@ -6,7 +6,9 @@ http://ltsv.org/
 
 ## Installation
 
-TODO
+```
+(ql:quickload 'cl-ltsv)
+```
 
 ## Usage
 
